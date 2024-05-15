@@ -1,10 +1,10 @@
 function bookService() {
-    alert("Redirecting to the booking page...");
+    alert("Перенаправление на страницу записи...");
     // Здесь можно добавить реальный код для перенаправления на страницу записи
 }
 
 function bookConsultation() {
-    alert("Redirecting to the consultation booking page...");
+    alert("Перенаправление на страницу консультации...");
     // Здесь можно добавить реальный код для перенаправления на страницу консультации
 }
 
