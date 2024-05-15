@@ -2,22 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7fa;
-    color: #004d40;
-    overflow-x: hidden;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
-    background-color: #00796b;
+    background-color: #d81b60;
     color: white;
-    padding: 2em 0;
+    padding: 1em 0;
     text-align: center;
-    animation: fadeIn 2s;
 }
 
 nav {
-    background-color: #004d40;
-    padding: 1em 0;
+    background-color: #8e24aa;
+    padding: 0.5em 0;
     text-align: center;
 }
 
@@ -36,11 +34,6 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #e0f7fa;
 }
 
 section {
@@ -53,23 +46,22 @@ section {
 }
 
 button {
-    background-color: #00796b;
+    background-color: #d81b60;
     border: none;
     color: white;
     padding: 0.5em 1em;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
+    transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #004d40;
-    transform: scale(1.1);
+    background-color: #8e24aa;
 }
 
 footer {
-    background-color: #004d40;
+    background-color: #333;
     color: white;
-    padding: 2em 0;
+    padding: 1em 0;
     text-align: center;
 }
 
@@ -88,52 +80,4 @@ footer {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
-}
-
-.social-links li a:hover {
-    color: #e0f7fa;
-}
-
-.falling-nuts {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.nut, .bolt {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    background-image: url('nut.png'); /* Изображение гайки */
-    background-size: cover;
-    animation: fall 5s linear infinite;
-}
-
-.bolt {
-    background-image: url('bolt.png'); /* Изображение болта */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fall {
-    0% {
-        transform: translateY(-100px) rotate(0deg);
-        opacity: 1;
-    }
-    100% {
-        transform: translateY(100vh) rotate(360deg);
-        opacity: 0;
-    }
 }
