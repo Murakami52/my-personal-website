@@ -25,18 +25,30 @@
                 opacity: 1;
             }
         }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+        }
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
             background-color: #f4f4f4;
-            animation: fadeIn 1s ease-in-out;
+            overflow: hidden;
         }
         .container {
             width: 80%;
             margin: 0 auto;
             padding: 20px;
+            position: relative;
+            z-index: 1;
         }
         header {
             background: #333;
@@ -137,9 +149,48 @@
         a:hover {
             text-decoration: underline;
         }
+        .falling-dollars {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .falling-dollars i {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: #28a745;
+            animation: fall 5s linear infinite;
+            opacity: 0;
+        }
+        @keyframes fall {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 <body>
+    <div class="falling-dollars">
+        <i class="fas fa-dollar-sign" style="left: 10%; animation-delay: 0s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 20%; animation-delay: 2s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 30%; animation-delay: 4s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 40%; animation-delay: 1s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 50%; animation-delay: 3s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 60%; animation-delay: 5s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 70%; animation-delay: 2s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 80%; animation-delay: 4s;"></i>
+        <i class="fas fa-dollar-sign" style="left: 90%; animation-delay: 1s;"></i>
+    </div>
     <header>
         <h1>Ширяев Роман</h1>
         <p>Маркетолог и Менеджер по Продажам</p>
@@ -167,7 +218,7 @@
             </div>
         </div>
         <div class="social-container">
-            <a href="https://vk.com/yourprofile" class="social-button"><i class="fab fa-vk"></i>Мои социальные сети</a>
+            <a href="https://vk.com/romkashiryaevv" class="social-button"><i class="fab fa-vk"></i>Моя страница</a>
         </div>
     </div>
     <footer>
