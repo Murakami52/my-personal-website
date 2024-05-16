@@ -4,6 +4,9 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
@@ -12,12 +15,14 @@ header {
     padding: 2em 0;
     text-align: center;
     animation: fadeIn 2s;
+    width: 100%;
 }
 
 nav {
     background-color: #004d40;
     padding: 1em 0;
     text-align: center;
+    width: 100%;
 }
 
 nav ul {
@@ -45,21 +50,37 @@ nav ul li a:hover {
 section {
     padding: 2em;
     text-align: center;
+    width: 100%;
 }
 
-.service-item {
-    margin: 2em 0;
+aside#phone-showcase {
+    width: 20%;
+    padding: 2em;
+    background-color: #f4f4f4;
+    text-align: center;
 }
 
-.service-item img {
+.phone-item {
+    margin-bottom: 2em;
+}
+
+.phone-item img {
     max-width: 100%;
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s;
 }
 
-.service-item img:hover {
+.phone-item img:hover {
     transform: scale(1.1);
+}
+
+.discount-banner img {
+    width: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(-20deg);
 }
 
 button {
@@ -81,6 +102,7 @@ footer {
     color: white;
     padding: 2em 0;
     text-align: center;
+    width: 100%;
 }
 
 .social-links {
