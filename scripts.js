@@ -53,7 +53,7 @@ function gameLoop() {
     });
 
     // Отрисовка врагов
-    enemies.forEach((enemy) => {
+    enemies.forEach((enemy, index) => {
         ctx.beginPath();
         ctx.arc(enemy.x, enemy.y, enemy.size, 0, Math.PI * 2);
         ctx.fillStyle = 'red';
@@ -63,7 +63,7 @@ function gameLoop() {
         if (Math.hypot(player.x - enemy.x, player.y - enemy.y) < player.size + enemy.size) {
             if (player.size > enemy.size) {
                 player.size += enemy.size / 2;
-                enemy.size = 0;
+                enemies.splice(index, 1);
             } else {
                 alert('Game Over');
                 document.location.reload();
