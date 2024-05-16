@@ -1,137 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
-header {
-    background-color: #00796b;
-    color: white;
-    padding: 2em 0;
-    text-align: center;
-    animation: fadeIn 2s;
-    width: 100%;
-}
-
-nav {
-    background-color: #004d40;
-    padding: 1em 0;
-    text-align: center;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #e0f7fa;
-}
-
-section {
-    padding: 2em;
-    text-align: center;
-    width: 100%;
-}
-
-aside#phone-showcase {
-    width: 20%;
-    padding: 2em;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.phone-item {
-    margin-bottom: 2em;
-}
-
-.phone-item img {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    transition: transform 0.3s;
-}
-
-.phone-item img:hover {
-    transform: scale(1.1);
-}
-
-.discount-banner img {
-    width: 100px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: rotate(-20deg);
-}
-
-button {
-    background-color: #00796b;
-    border: none;
-    color: white;
-    padding: 0.5em 1em;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-button:hover {
-    background-color: #004d40;
-    transform: scale(1.1);
-}
-
-footer {
-    background-color: #004d40;
-    color: white;
-    padding: 2em 0;
-    text-align: center;
-    width: 100%;
-}
-
-.social-links {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social-links li {
-    display: inline;
-    margin: 0 1em;
-}
-
-.social-links li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.social-links li a:hover {
-    color: #e0f7fa;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+canvas {
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
